@@ -1,0 +1,29 @@
+{
+  "name": "pokefight-backend",
+  "version": "1.0.0",
+  "description": "pokemon game",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mehtap123/pokeFight-Backend.git"
+  },
+  "keywords": [
+    "pokemon",
+    "game"
+  ],
+  "author": "Mehtap, Christian, Phillip, Ivana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mehtap123/pokeFight-Backend/issues"
+  },
+  "homepage": "https://github.com/Mehtap123/pokeFight-Backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1"
+  }
+}
