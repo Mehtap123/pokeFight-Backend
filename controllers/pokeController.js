@@ -6,4 +6,8 @@ export const getAllPokemon = (req, res) => {
 };
 
 // Endpunkt pokemon/:id
-export const getSinglePokemon = (req, res) => {};
+export const getSinglePokemon = (req, res) => {
+  const { id } = req.params;
+  const indexInArray = id - 1;
+  res.status(200).json(data[indexInArray]);
+};
