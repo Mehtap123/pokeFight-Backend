@@ -19,6 +19,16 @@ export const saveHighscore = async (req, res) => {
   }
 };
 
+export const deleteHighscore = async (req, res) => {
+  try {
+    const { id } = req.params;
+    await Pokemon.findByIdAndDelete(id);
+    res.status(200).send("Highscore successfully deleted");
+  } catch (error) {
+    res.status(500).json(error);
+  }
+};
+
 // export const updateHighscore = async (req, res) => {
 //   try {
 //     const { name, highscore: highscore } = req.body;
